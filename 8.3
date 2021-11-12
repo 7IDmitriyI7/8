@@ -1,0 +1,27 @@
+using System;
+
+namespace _8._3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите A");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите B");
+            double b = Convert.ToDouble(Console.ReadLine());
+            if (a > 0 && b > 0 && a > b)
+            {
+               double c = a / b;
+                a = a - b * (int)c;
+
+                Console.WriteLine((int)a + " ед длина не занятой части");
+            }
+            else
+            {
+                Console.WriteLine("Ошибка ввода данных");
+            }
+
+        }
+    }
+}
