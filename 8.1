@@ -1,0 +1,26 @@
+using System;
+
+namespace _8._1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите размер файла в байтах");
+            double a = Convert.ToDouble(Console.ReadLine());
+            if (a >= 1024)
+            {
+
+                    a = Convert.ToInt32(a);             
+                    a = (int)a / 1024;
+                    Console.WriteLine(a + " Килобайтов");
+
+
+            }
+            else
+            {
+                Console.WriteLine("Ошибка ввода данных");
+            }
+        }
+    }
+}
