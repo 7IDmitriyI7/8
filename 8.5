@@ -1,0 +1,28 @@
+using System;
+
+namespace _8._5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите двузначное число");
+            string a = Convert.ToString(Console.ReadLine());
+            if (a.Length == 3)
+            {
+                int b = int.Parse(a);
+                int c = b / 100;
+                int d = b - c * 100;
+                string cc = Convert.ToString(c);
+                string dd = Convert.ToString(d);
+                string f = dd + cc;
+                Console.WriteLine(f);
+
+            }
+            else
+            {
+                Console.WriteLine("Ошибка ввода данных");
+            }
+        }
+    }
+}
