@@ -1,0 +1,23 @@
+using System;
+
+namespace _8._4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите двузначное число");
+            string a = Convert.ToString(Console.ReadLine());
+            if (a.Length == 2)
+            {
+                char[] mas = a.ToCharArray();
+                Array.Reverse(mas);
+                Console.WriteLine(mas);
+            }
+            else
+            {
+                Console.WriteLine("Ошибка ввода данных");
+            }
+        }
+    }
+}
